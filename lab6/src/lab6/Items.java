@@ -47,6 +47,11 @@ public class Items{
 		this.price = price;
 		subitems = new ArrayList<Items>();
 	}
+
+	@Override
+	public String toString() {
+		return  description ;
+	}
 	
 	
 

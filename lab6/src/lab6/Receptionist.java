@@ -9,6 +9,7 @@ public class Receptionist {
 		
 		
 		Queue<Items> items=  new LinkedList<Items>();
+		Queue<Items> items2=  new LinkedList<Items>();
 		
 		Items i1 = new Items("LBB", 5.59);
 		Items i2 = new Items("LTL CAJ", 2.79);
@@ -25,6 +26,8 @@ public class Receptionist {
 		
 		items.add(i1);
 		items.add(i2);
+		items2.add(i1);
+		items2.add(i2);
 		System.out.println("====================================================\n");
 		System.out.println("Customer's Receipt");
 		System.out.println("====================================================\n");
@@ -34,7 +37,7 @@ public class Receptionist {
 		System.out.println("Packing Slip");
 		contextStrategy = new ContextStrategy(new PackingSlip());
 		System.out.println("====================================================\n");
-		contextStrategy.print(items);
+		contextStrategy.print(items2);
 		System.out.println("====================================================\n");
 		
 	}
