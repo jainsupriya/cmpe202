@@ -20,7 +20,12 @@ public class PackingSlip implements ReceiptStrategy{
 			System.out.println(poppeditem.getDescription());		
 			for(Items items2 : poppeditem.getChild()) 
 			{
-				list.add(items2); 
+				if((items2.getDescription().contains("-")  ||
+						(items2.getDescription().contains("{") ) )) 
+					list.add(items2); 
+				else
+					System.out.println( items2.getDescription());
+					
 			}
 			if(list.size()>0)
 			{
