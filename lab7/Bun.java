@@ -21,12 +21,12 @@ public class Bun extends LeafDecorator
         this.options = options ;
         for ( int i = 0; i<options.length; i++ )
         {
-            if ( "Gluten-Free Bun".equals(options[i]) ) 
-                this.price += 1.00 ;
-            else if ( "Hawaiian Bun".equals(options[i]) ) 
+            if ( "Gluten-Free Bun".equals(options[i]) || "Hawaiian Bun".equals(options[i]) ) 
                 this.price += 1.00 ;
             else if ( "Pretzel Bun".equals(options[i]) ) 
                 this.price += 0.50;
+            else 
+                this.price+= 0.00;
         }
     }
     

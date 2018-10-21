@@ -14,7 +14,7 @@ public class Toppings extends LeafDecorator
         this.options = options ;
         //if ( options.length > 4 )
             //this.price += (options.length-4) * 0.75 ;
-        this.price = price;
+        this.price +=0.00;
     }
     
     public String getDescription() 
