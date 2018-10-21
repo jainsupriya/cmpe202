@@ -1,28 +1,24 @@
-public class Premium extends LeafDecorator
+
+/**
+ * Write a description of class PremiumCheese here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class PremiumCheese extends LeafDecorator
 {
     private String[] options ;
     
-    
-    public Premium( String d )
+    public PremiumCheese( String d )
     {
         super(d) ;
     }
     
-    // premium topping +1.50
     public void setOptions( String[] options )
     {
         this.options = options ;
-        int length = options.length; 
-        if(length>0)
-        {
-            for(int i =0;i< length ;i++)
-            {
-                if(options[i].equals( "Marinated Tomatoes"))
-                    this.price += 3.00;
-            }
-            this.price += length*1.00;
-
-        }  
+        if ( options.length > 0 )
+            this.price += (options.length-1) * 1.50 ;
     }
     
     public String getDescription() 
@@ -35,5 +31,4 @@ public class Premium extends LeafDecorator
         }        
         return desc ;
     }
-    
 }

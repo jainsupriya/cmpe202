@@ -1,9 +1,16 @@
-public class Premium extends LeafDecorator
+
+/**
+ * Write a description of class Side here.
+ *
+ * @author (your name)
+ * @version (a version number or a date)
+ */
+public class Side extends LeafDecorator
 {
     private String[] options ;
     
     
-    public Premium( String d )
+    public Side( String d )
     {
         super(d) ;
     }
@@ -12,17 +19,8 @@ public class Premium extends LeafDecorator
     public void setOptions( String[] options )
     {
         this.options = options ;
-        int length = options.length; 
-        if(length>0)
-        {
-            for(int i =0;i< length ;i++)
-            {
-                if(options[i].equals( "Marinated Tomatoes"))
-                    this.price += 3.00;
-            }
-            this.price += length*1.00;
-
-        }  
+        if ( options.length > 0 )
+            this.price += options.length * 3.00 ;
     }
     
     public String getDescription() 
