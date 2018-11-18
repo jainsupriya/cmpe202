@@ -11,11 +11,7 @@ public class Broker {
 	
 	public void sendOrder()
 	{
-		for(Order order:lOrders)
-		{
-			order.execute();
-		}
+		this.lOrders.forEach(Order::execute);
 		lOrders.clear();
-
 	}
 }
