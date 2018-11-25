@@ -3,3 +3,10 @@ On the other hand, the configuration is handled separately in a config file in F
 
 
 ![alt text](https://github.com/jainsupriya/cmpe202/blob/master/lab10/Screenshots/SLOTMODEL_25.png)
+
+![alt text](https://github.com/jainsupriya/cmpe202/blob/master/lab10/Screenshots/SLOTMODEL_50.png)
+
+![alt text](https://github.com/jainsupriya/cmpe202/blob/master/lab10/Screenshots/CRANKMODEL_ONEQTR.png)
+
+![alt text](https://github.com/jainsupriya/cmpe202/blob/master/lab10/Screenshots/CRANKMODEL_TWOQTR.png)
+
